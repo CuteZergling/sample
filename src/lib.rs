@@ -29,7 +29,7 @@ pub unsafe extern "C" fn main() -> Vec<String> {
 
     for i in 0..12 {
         let r: i32 = rng.gen();
-        command!("say random: {}", r);
+        command!("say mychange: {}", r);
         command!("scoreboard players set {} Rcommand {}",id.to_string(),i);
         delay!(100);
     }
